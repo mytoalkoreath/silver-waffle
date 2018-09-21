@@ -6,7 +6,7 @@ public class BuddyInfo {
 	
 	
 	public BuddyInfo(String name, String address, String number) {
-		// TODO Auto-generated method stub
+		
 		super();
 		this.setName(name);
 		this.setpNumber(number);
