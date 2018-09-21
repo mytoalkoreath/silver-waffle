@@ -26,6 +26,6 @@ public class AddressBook {
 		System.out.println("Address Book Created");
 		Book.addBuddy("Frank", "3254 Trajan Lane" , "613-555-7432");
 		Book.removeBuddy(0);
-		Book.addBuddy("Frank", "3254 Trajan Lane" , "613-555-7432");
+	
 	}
 }
