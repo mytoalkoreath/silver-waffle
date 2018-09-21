@@ -1,31 +1,31 @@
-import java.util.*;
+	import java.util.*;
 public class AddressBook {
 	private List<Object> AddressList = new ArrayList<Object>();
-	private int Count;
+
 	public AddressBook() {
 		super();
-		this.Count = 0;
+
 	}
 	
 	
 	public void addBuddy(String name, String address, String pNumber) {
 		this.AddressList.add(new BuddyInfo(name, address, pNumber));
-		this.Count++;
 	}
 	
-	public void removeBuddy() {
-		if (getCount() == 0) {
+	public void removeBuddy(int index) {
+		if (AddressList.size()>= 0 && index < AddressList.size()) {
 			
-		}else {
-			this.AddressList.remove(getCount()-1);
-			this.Count --;
+			this.AddressList.remove(index);
+
 		}
 	}
-	public int getCount() {
-		return Count;
-	}
+	 	
 	
 	public static void main(String[] args) {
+		AddressBook Book = new AddressBook();
 		System.out.println("Address Book Created");
+		Book.addBuddy("Frank", "3254 Trajan Lane" , "613-555-7432");
+		Book.removeBuddy(0);
+		Book.addBuddy("Frank", "3254 Trajan Lane" , "613-555-7432");
 	}
 }
